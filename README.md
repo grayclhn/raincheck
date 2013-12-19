@@ -1,4 +1,4 @@
-latecheck
+Raincheck
 =========
 
-super minimal deferred argument testing for R functions
+Super minimal deferred argument testing for R functions.
