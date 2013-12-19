@@ -17,7 +17,6 @@
 raincheck <- function(expr) {
   e <- substitute(expr)
   function(env = parent.frame()) {
-    ##    print(deparse(call.))
     eval(e, env)
     invisible(TRUE)
   }
