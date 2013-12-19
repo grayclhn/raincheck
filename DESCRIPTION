@@ -1,0 +1,9 @@
+Package: raincheck
+Title: Minimal deferred argument testing for R functions
+Description: The Raincheck package provides a way to check and clean
+  up a function's arguments from outside that function. This allows
+  for much more readable function definitions.
+Version: 0.0.1
+Author: Gray Calhoun <gcalhoun@iastate.edu>
+Maintainer: Gray Calhoun <gcalhoun@iastate.edu>
+License: GPL (>= 2)

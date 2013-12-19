@@ -1,0 +1,62 @@
+Raincheck (version 0.0.1, 12/19/2013)
+=====================================
+
+Raincheck is a minimal R package that allows you to put messy code to
+reformat and check a function's arguments *outside* that function.
+For example:
+
+    greatfunction <- function(x1, x2, x3 = NULL) {
+      MakeXsCorrect()
+      ## great code that does great things
+      ## ...
+      return(results)
+    }
+
+    MakeXsCorrect <- raincheck({
+      x1 <- as.greatobject1(x1)
+      x2 <- as.greatobject2(x2)
+      x3 <- as.therightthing(x1, x2, x3)
+      ## Many more steps to get the xs in the right format
+      ## ...
+    })
+
+The assignments `x1 <- as.greatobject(x1)`, etc., operate on the copy
+of `x1` in `greatfunction`.
+
+Why do this? `MakeXsCorrect` can contain a lot of confusing
+boilerplate code that is peripheral to the main point of the
+function. In those cases, this structure can be more readable than
+putting the code directly in the function.
+
+Dependencies
+------------
+
+R, obviously, available from <cran.r-project.org>. Raincheck has been
+tested with R version 3; please file a bug report if you run into
+problems with older versions.
+
+License
+-------
+
+Raincheck is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the
+Free Software Foundation; either version 2 of the License, or (at your
+option) any later version.
+
+Raincheck is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Raincheck; if not, see <http://www.gnu.org/licenses/>.
+
+Contact
+-------
+
+Raincheck is developed and maintained by Gray Calhoun
+<gray@clhn.co>. Please file bug reports in the project's bug tracker:
+<https://github.com/grayclhn/raincheck/issues> and email Gray if you
+have any other questions or concerns.
+
+Copyright (C) 2013 Gray Calhoun
