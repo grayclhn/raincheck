@@ -28,13 +28,6 @@ boilerplate code that is peripheral to the main point of the
 function. In those cases, this structure can be more readable than
 putting the code directly in the function.
 
-Dependencies
-------------
-
-R, obviously, available from <cran.r-project.org>. Raincheck has been
-tested with R version 3; please file a bug report if you run into
-problems with older versions.
-
 Motivation: Literate-style argument checking in R
 -------------------------------------------------
 
@@ -174,6 +167,13 @@ if you have any suggestions.
 [6]: https://github.com/grayclhn/raincheck
 [7]: http://adv-r.had.co.nz/
 [8]: http://adv-r.had.co.nz/Exceptions-Debugging.html
+
+Dependencies
+------------
+
+R, obviously, available from <cran.r-project.org>. Raincheck has been
+tested with R version 3; please file a bug report if you run into
+problems with older versions.
 
 License
 -------
